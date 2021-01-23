@@ -45,8 +45,8 @@ body {
 
    .social-icons a {
         display: inline-block;
-      
-        &:before {
+}  
+   .social-icons a:before {
             @include transformScale();
             content: " ";
             width: 60px;
@@ -57,12 +57,12 @@ body {
             transition: all $timing ease-out;
         }
         
-        &:hover:before {
+       .social-icons a:hover:before {
             transform: scale(0);
             transition: all $timing ease-in;
         }
         
-        &:hover i {
+        .social-icons a:hover i {
             @include transformScale(2.2);
             color: $iconColor;
             background: -webkit-linear-gradient(45deg, $iconColor, $accent);
@@ -70,6 +70,6 @@ body {
             -webkit-text-fill-color: transparent;
             transition: all $timing ease-in;
         }
-}
+
   
 }
