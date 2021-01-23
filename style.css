@@ -26,8 +26,8 @@ body {
     padding: 0;
     list-style: none;
     margin: 1em;
-  
-    li {
+}
+ .social-icons li {
         display: inline-block;
         margin: 0.15em;
         position: relative;
@@ -35,7 +35,7 @@ body {
 
     }
 
-    i {
+  .social-icons  i {
         color: #fff;
         position: absolute;
         top: 21px;
@@ -43,7 +43,7 @@ body {
         transition: all $timing ease-out;
     }
 
-    a {
+   .social-icons a {
         display: inline-block;
       
         &:before {
@@ -70,6 +70,6 @@ body {
             -webkit-text-fill-color: transparent;
             transition: all $timing ease-in;
         }
-    }
+}
   
 }
